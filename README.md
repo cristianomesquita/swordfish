@@ -49,7 +49,7 @@ agora insira a senha que foi enviada para seu email e logo após cadastre sua se
 
 ### Enviando arquivos para o servidor
 
-    Existem algumas formas de subir os arquivos para o servidor, via SSH ou FTP por exemplo além de poder usar os recursos de git, para este momento via FTP supre as necessidades, para isso instale algum programa de FTP para facilitar como FileZilla ou WinSCP dependendo do seu sistema operacional. Agora basta abrir o programa e entrar com as credenciais. Insira o IP fornecido pela Digital Ocean e usuário e senha. 
+<p>Existem algumas formas de subir os arquivos para o servidor, via SSH ou FTP por exemplo além de poder usar os recursos de git, para este momento via FTP supre as necessidades, para isso instale algum programa de FTP para facilitar como FileZilla ou WinSCP dependendo do seu sistema operacional.</p> Agora basta abrir o programa e entrar com as credenciais. Insira o IP fornecido pela Digital Ocean e usuário e senha. 
     Via SSH crie o diretório /www dentro do diretório /var comumente utilizados. Na raiz do seu terminal navegue cd /var e crie o diretório www assim mkdir www. No programa de FTP navegue até o diretório www e arraste os arquivos pra dentro dele.  
 
 ### PM2
