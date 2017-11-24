@@ -23,7 +23,6 @@ CentOS 7.4, assim que terminar a instalação a digital ocean enviará para o em
 Agora de posse dos dados de acesso abra o terminal e digite ssh root@<IP> pressione enter, 
 agora insira a senha que foi enviada para seu email e logo após cadastre sua senha definitiva.
 
-### Instalações de ambiente
 
 #### NodeJS
 
