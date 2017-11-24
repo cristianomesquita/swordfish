@@ -27,8 +27,26 @@ agora insira a senha que foi enviada para seu email e logo após cadastre sua se
 
 #### NodeJS
 
-    Pronto agora as intalações de ambiente, primeiro instale o nvm (node version manager), rode este comando no seu terminal conectado via SSH: 
+    Primeiro instale o nvm (node version manager), rode este comando no seu terminal conectado via SSH: 
     curl https://raw.githubusercontent.com/creationix/nvm/v0.23.2/install.sh | bash 
     Feito isso você deve reiniciar seu terminal. Para instalar o versão especifica do nodejs neste caso a 8.4.0 execute o comando nvm install 8.4.0.
 
 #### MongoDB
+
+    Para instalar o mongodb adicione o seguinte repositório:
+    sudo vi/etc/yum.repos.d/mongodb-org.repo 
+
+    cole este trecho no arquivo que está sendo criado:
+    [mongodb-org-3.4]
+    name=MongoDB Repository
+    baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.4/x86_64/
+    gpgcheck=1
+    enabled=1
+    gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
+
+    digite :wq para salvar e fechar o arquivo. Agora o próximo passo é rodas o comando de 
+    instalação propriamente dito, execute o seguinte comando no seu terminal: sudo yum install mongodb-org. Está feito agora basta iniciar o mongodb para isso copie e cole este comando no terminal: sudo systemctl reload mongod.
+
+### PM2
+
+    O módulo PM2 gerencia a aplicação nodejs para nós mesmo após sairmos do terminal, para que o servidor continue rodando em produção, para isso agora vamos usar o npm que já está instalado previamente quando instalamos o nodejs. Execute no terminal npm install pm2 -g, feito isso para manter o servidor sempre ativo além de diversos outros recursos interessantes do PM2 rode o comando pm2 start server.js.
